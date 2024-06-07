@@ -5,15 +5,15 @@
 // const {getUserByIdArrow} = require('./js-foundation/03-arrow.js');
 // require('./js-foundation/05-factory.js');
 
+import { buildLogger } from "./plugins/logger.plugin";
+
 // const getPokemonById = require('./js-foundation/06-promises')
 
-const {buildLogger} = require('./plugins');
 
+const logger = buildLogger('app.ts')
 
-const logger = buildLogger('app.js')
-
-logger.log('Hola mundo');
-logger.error('Hola mundo');
+// logger.log('Hola mundo');
+// logger.error('Hola mundo');
 
 // getPokemonById(4)
 //     .then ( (pokemon) => console.log({pokemon}))
